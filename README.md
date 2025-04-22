@@ -1,3 +1,5 @@
+S'ha implementat l'operació de modificació (Update) d'un usuari. Ara, des de la llista d'usuaris, es pot fer clic sobre un usuari per obrir un formulari d'edició en un nou component. El formulari carrega les dades actuals i permet modificar-les. Un cop desades, els canvis es guarden i es redirigeix l'usuari a la llista.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
