@@ -40,6 +40,20 @@ export const LogIn = async (email: string, password: string): Promise<User> => {
     }
 };
 
+export const getUserById = async (id: string) => {
+    const res = await fetch(`/api/users/${id}`);
+    return await res.json();
+  };
+  
+  export const updateUser = async (user: User) => {
+    await fetch(`/api/users/${user.id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(user),
+    });
+  };
+  
+
 /* 
 //PODEM FERHO COM UNA PROMESA
 export const addUser = async (newUser: User): Promise<User> => {

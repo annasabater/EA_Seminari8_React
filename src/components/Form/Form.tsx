@@ -8,13 +8,14 @@ interface FormProps {
 }
 
 const INITIAL_STATE: User = {
+    id: 0, 
     name: '',
     age: 0,
     email: '',
     password: '',
-    phone: 0
-};
-
+    phone: 0,
+  };
+  
 type FormReducerAction =
     | { 
         type: "change_value"; 

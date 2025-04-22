@@ -5,6 +5,7 @@ import Form from './components/Form';
 import UsersList from './components/UsersList';
 import { fetchUsers, LogIn } from './services/usersService';
 import Login from './components/Login';
+import EditUser from './components/UsersList/EditUser';
 
 interface AppState {
     currentUser: User | null;
